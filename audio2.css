@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("tegakigara220.png");
+}
+
+#displayPanel{
+    font-size: 32pt;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p{
+    text-align: center;
+    font-size: 20pt;
+}

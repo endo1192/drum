@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link href="audio2.css" rel="stylesheet">
+</head>
+<body> 
+    <div id="displayPanel"></div>  
+    <div id="controlPanel">
+        <input type="text" id="textBox"/>
+        <button id ="applyButton">このボタンは特に</button>
+        <button id ="clearButton">関係ありませんのでお気になさらず</button>
+    </div>
+
+    <p>メトロノーム・ドラム版（プロトタイプ）です！</p>
+
+    <p><input type="number" id="audioNumber" placeholder="ここに数字を入力してね">
+    <button onclick="playAudioByNumber()">再生</button>
+    <button onclick="pauseAudio()">停止</button></p>
+    <p>上の入力欄に50~200までの数字を入力すると、そのテンポでドラムが鳴るよ!</p>
+
+    <p>
+        <img src="drum.png">
+    </p>
+
+    <p>入力しづらい場合は下のスライドバーをつかってもOK!</p>
+
+    <p><input type="range" id="audioNumberS" min="50" max="200" step="1">
+    BPM:<span id="current-value"></span></p>
+    <p><button onclick="playAudioByNumberS()">再生</button>
+    <button onclick="pauseAudio()">停止</button><br> .</p>
+
+    
+
+    <script src="audio2.js"></script>
+</body>
+</html>
